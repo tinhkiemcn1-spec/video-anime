@@ -1,0 +1,255 @@
+{
+ "title": "Ví dụ: chạy với VO dài đúng 38 giây",
+ "vo": "vo.wav",
+ "host_preset": "mau",
+ "cast": {
+  "hoang_hau": {
+   "hat": "crown",
+   "hair": "long",
+   "hair_col": "#40205a",
+   "robe": "#3a2a50",
+   "cape": "#22202a"
+  },
+  "bach_tuyet": {
+   "hair": "princess",
+   "hair_col": "#1a1a1a",
+   "robe": "#f0c828",
+   "sash": "#3060c0"
+  },
+  "linh": {
+   "hat": "helmet",
+   "beard": "mustache",
+   "beard_col": "#333",
+   "robe": "#6a2a22",
+   "sash": "#c8a040"
+  },
+  "ao": {
+   "hat": "officer",
+   "flag": {
+    "bands": [
+     "#e8002a",
+     "#ffffff",
+     "#e8002a"
+    ],
+    "dir": "h"
+   },
+   "robe": "#a4b4b4",
+   "sash": "#7a5030"
+  }
+ },
+ "shots": [
+  {
+   "t": 0,
+   "end": 4,
+   "type": "host",
+   "bg": "parchment",
+   "title": "NHỮNG CHUYỆN LMAO NHẤT (Phần 1)",
+   "title_y": 70,
+   "host": {
+    "pose": "read",
+    "eyes": "line",
+    "brow": "up"
+   },
+   "sfx": "pop"
+  },
+  {
+   "t": 4,
+   "end": 8,
+   "type": "host",
+   "bg": "white",
+   "host": {
+    "close": true,
+    "pose": "shrug",
+    "x": 960
+   }
+  },
+  {
+   "t": 8,
+   "end": 11,
+   "type": "card",
+   "bg": "white",
+   "title": "Bạch Tuyết",
+   "cast": [
+    {
+     "id": "bach_tuyet",
+     "x": 960,
+     "scale": 0.85,
+     "talk": false,
+     "y": 1020
+    }
+   ],
+   "sfx": "ding"
+  },
+  {
+   "t": 11,
+   "end": 15,
+   "type": "photo",
+   "photo": "photos/thanh_cat_1.jpg",
+   "labels": [
+    {
+     "text": "Thành Cát Tư Hãn",
+     "x": 640,
+     "y": 1000,
+     "size": 60
+    }
+   ]
+  },
+  {
+   "t": 15,
+   "end": 19,
+   "type": "scene",
+   "bg": "throne",
+   "cast": [
+    {
+     "id": "hoang_hau",
+     "x": 560,
+     "scale": 1.05,
+     "pose": "idle",
+     "expr": "smug",
+     "talk": true,
+     "y": 1100
+    },
+    {
+     "id": "linh",
+     "x": 1360,
+     "scale": 0.9,
+     "pose": "sword",
+     "expr": "angry",
+     "y": 1100,
+     "flip": true
+    }
+   ],
+   "labels": [
+    {
+     "text": "Hoàng hậu",
+     "x": 560,
+     "y": 120
+    }
+   ],
+   "bubble": {
+    "kind": "shout",
+    "char": "bach_tuyet",
+    "expr": "sad",
+    "x": 1100,
+    "y": 270,
+    "w": 440,
+    "h": 320,
+    "tail": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "t": 19,
+   "end": 22,
+   "type": "scene",
+   "bg": "mountains",
+   "cast": [
+    {
+     "id": "linh",
+     "crowd": [
+      8,
+      5
+     ],
+     "scale": 0.38,
+     "x": 1160,
+     "y": 1120
+    },
+    {
+     "id": "ao",
+     "x": 560,
+     "scale": 1.1,
+     "pose": "fist",
+     "y": 1160
+    }
+   ],
+   "labels": [
+    {
+     "text": "Liechtenstein",
+     "x": 1500,
+     "y": 380
+    }
+   ],
+   "sfx": "thud"
+  },
+  {
+   "t": 22,
+   "end": 25,
+   "type": "tv",
+   "bg": "white",
+   "marks": [
+    {
+     "kind": "laugh",
+     "x": 1620,
+     "y": 160
+    }
+   ]
+  },
+  {
+   "t": 25,
+   "end": 28,
+   "type": "scene",
+   "bg": "forest",
+   "mood": "gray",
+   "cast": [
+    {
+     "id": "bach_tuyet",
+     "x": 700,
+     "scale": 0.9,
+     "expr": "cry",
+     "y": 1100,
+     "move": [
+      300,
+      1500
+     ]
+    }
+   ],
+   "marks": [
+    {
+     "kind": "x",
+     "x": 960,
+     "y": 520
+    }
+   ],
+   "sfx": "fail"
+  },
+  {
+   "t": 28,
+   "end": 33,
+   "type": "list",
+   "items": [
+    {
+     "text": "Trận Đại Cức\n(607 TCN)",
+     "char": "linh"
+    },
+    {
+     "text": "Hy Lạp - Bulgaria\n(1925)",
+     "char": "ao"
+    },
+    {
+     "text": "Trận Pelusium\n(525 TCN)",
+     "char": "bach_tuyet"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "t": 33,
+   "end": 38,
+   "type": "stack",
+   "bg": "parchment",
+   "items": [
+    {
+     "title": "Bạch Tuyết và 7 anh lùn",
+     "char": "bach_tuyet"
+    },
+    {
+     "title": "Công chúa da lừa",
+     "char": "hoang_hau"
+    }
+   ],
+   "sfx": "whoosh@2.2"
+  }
+ ]
+}
